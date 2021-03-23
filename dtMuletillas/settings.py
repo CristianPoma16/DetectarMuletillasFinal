@@ -28,10 +28,14 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = False
 
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
-
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', False) )
+SECURE_SSL_REDIRECT=True
 ALLOWED_HOSTS = ['*']
-
+CSRF_COOKIE_SECURE=True
+SESSION_COOKIE_SECURE=True
+SECURE_HSTS_SECONDS=518400
+SECURE_HSTS_INCLUDE_SUBDOMAINS=True
+SECURE_HSTS_PRELOAD=True
 
 # Application definition
 
