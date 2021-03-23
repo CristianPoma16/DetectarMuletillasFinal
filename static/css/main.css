@@ -1,0 +1,338 @@
+body,
+html {
+    background: url(https://images.unsplash.com/photo-1434064511983-18c6dae20ed5?q=80&fm=jpg&s=c45f3bff08de3f8509e90f66aab9393f) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 2px 2px 10px #999;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+::-moz-selection {
+    background: rgba(0, 0, 0, 0.5);
+    color: red;
+}
+
+.mobile-screen {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 350px;
+    background: rgba(3, 3, 3, 0.7);
+    overflow: hidden;
+    color: #fff;
+}
+
+.mobile-screen:hover {
+    color: #ffffff;
+}
+
+.mobile-screen-res {
+    position: initial;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    height: auto;
+    background: rgba(3, 3, 3, 0.7);
+    overflow: hidden;
+    color: #fff;
+}
+
+.mobile-screen-res-est {
+    position: unset;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    height: 650px;
+    background: rgba(255, 255, 255, 0.564);
+    overflow: hidden;
+}
+
+.input-mul {
+    border: 1px solid;
+    border-radius: 10px;
+    border-left: 5px solid;
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgb(30, 255, 54);
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.header {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(3, 3, 3, 0.1);
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.564);
+}
+
+h3,
+.estadistica-tittle {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30x;
+    color: rgba(0, 0, 0, 0.564);
+}
+
+.tablaMul {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-color: #3b6efa;
+}
+
+.tablaMul:hover {
+    border-color: transparent;
+}
+
+.encabezado {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.add-mul {
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.datos {
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(30, 255, 0);
+}
+
+.datos:hover {
+    background: rgba(225, 40, 54, 0.2);
+}
+
+.info-text {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 21px;
+    color: rgba(255, 250, 250, 0.5);
+}
+
+
+/*.logo {
+  position: relative;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background: url(https://lavozdelprm.org/wp-content/uploads/2019/04/red_alert2.gif)
+    no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}*/
+
+form {
+    padding-top: 20px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+input,
+.doc-load-btn {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 84%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.doc-load-btn:hover {
+    background: rgba(3, 3, 3, 0.7);
+    overflow: hidden;
+}
+
+.input-doc {
+    width: 600px;
+    border: none;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    background: none;
+    border-color: rgb(225, 40, 54);
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-doc:hover {
+    outline: 0;
+    background: rgba(225, 40, 54, 0.2);
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+input:focus {
+    outline: 0;
+    background: rgba(225, 40, 54, 0.2);
+    border-radius: 20px;
+    border-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+.doc-load-btn {
+    border-radius: 15px;
+    text-align: center;
+    background: rgb(225, 40, 54);
+    color: #fff;
+}
+
+.other-options {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 2px;
+    left: 0;
+}
+
+.option {
+    position: relative;
+    display: block;
+    float: right;
+    width: 45%;
+    margin: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgb(225, 40, 54);
+    cursor: pointer;
+}
+
+.option:first-child {
+    float: left;
+    left: 3.3%;
+}
+
+.option:last-child {
+    margin-right: 3.3%;
+}
+
+.option-text {
+    position: relative;
+    margin: 0;
+    line-height: 30px;
+    color: #ccc;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+
+/* Change colors container */
+
+.change-colors-container {
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.boton {
+    text-decoration: none;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(40, 43, 225, 0.2);
+    box-shadow: 0 5px 5px rgba(40, 43, 225, 0.2), 0 9px 0 hsl(236, 48%, 32%), 0px 9px 10px rgb(0, 4, 255), inset 0px 2px 9px rgba(255, 255, 255, 0.2), inset 0 -2px 9px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    font-family: Arial, Helvetica, sans;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover {
+    background: rgba(225, 40, 54, 0.2);
+    box-shadow: 0 5px 5px rgba(225, 40, 54, 0.2), 0 9px 0 #5a3030, 0px 9px 10px rgb(255, 0, 0), inset 0px 2px 15px rgba(0, 0, 0, 0.2), inset 0 -2px 9px rgba(0, 0, 0, 0.2);
+    color: #fff !important;
+}
+
+.boton:active {
+    top: 7px;
+    background-color: rgba(40, 225, 55, 0.2);
+    box-shadow: 0 2px 0 #393939, 0px 4px 4px rgb(51, 255, 0), inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff !important;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %} 
+{% load bootstrap4 %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Detección de muletillas</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href='{% static 'css/main.css'%}' />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    {% bootstrap_messages %}
+    <div class="mobile-screen">
+      <div class="header">
+        <h3 >Seleccione el documento del discurso</h3>
+      </div>
+
+      <form id="txt-form" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input
+          class="input-doc"
+          accept=".txt"
+          type="file"
+          name="document"
+          required
+        /><br>
+        <input
+          class="input-doc"
+          type="number"
+          scroll="false"
+          name="dni"
+          placeholder="Ingrese su número de cédula"
+          required
+        />
+        <button type="submit" class="doc-load-btn">Subir documento</button>
+      </form>
+    </div>
+  </body>
+</html>

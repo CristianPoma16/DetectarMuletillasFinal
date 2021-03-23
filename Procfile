@@ -1,0 +1,1 @@
+web: gunicorn DETECT-MULETILLAS.wsgi --log-file -
