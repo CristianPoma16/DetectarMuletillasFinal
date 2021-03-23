@@ -8,17 +8,16 @@ from nltk.tokenize import RegexpTokenizer
 from nltk import FreqDist
 from os import remove
 import codecs
-import json
 from pymongo import MongoClient 
 from django.contrib import messages
 try: 
-    conn = MongoClient() 
+    conn = MongoClient("mongodb://cristianpr16:<alexanderpoma16>@cluster0-shard-00-00.az20n.mongodb.net:27017,cluster0-shard-00-01.az20n.mongodb.net:27017,cluster0-shard-00-02.az20n.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority")
     print("Connected successfully!!!") 
 except:   
     print("Could not connect to MongoDB") 
   
 # database 
-db = conn.myDB
+db = conn.dtMuletillas
   
 # Created or Switched to collection names: my_gfg_collection 
 collection = db.muletillas
